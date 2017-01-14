@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tmenov.denis.programm_search_002.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:minLines="1"
+        android:hint="@string/enter_name"
+        />
+    <!--
+        android:minLines - минимальное количество строк
+        android:hint - текст, когда ничего не написано, потом исчезает
+    -->
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="onclick"
+    android:text="@string/start">
+    </Button>
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    </ProgressBar>
+    <TextView
+    android:id="@+id/tvInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="">
+    </TextView>
+</LinearLayout>
